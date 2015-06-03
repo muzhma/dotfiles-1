@@ -1,3 +1,4 @@
-[submodule "/home/jkl/.oh-my-zsh"]
-	path = /home/jkl/.oh-my-zsh
+# submodules use relative paths pls
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
