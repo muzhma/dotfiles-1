@@ -17,6 +17,9 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'altercation/vim-colors-solarized' 
 
+NeoBundle 'Conque-Shell'
+NeoBundle 'Valloric/vim-indent-guides'
+
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 call neobundle#end()
 filetype plugin indent on
