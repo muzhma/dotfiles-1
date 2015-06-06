@@ -66,10 +66,16 @@ if [ -x /usr/bin/dircolors ]; then
    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
+# some aliases
 alias statmk="make SHARED=0 CC='gcc -static'"
-alias xup="sh ~/.dotfiles/xup.sh"
+alias xup="sh ~/.dotfiles/xup.sh" #FIXME
 
+# if we have local zsh changes add here
 if [ -x ~/.zlocal ]; then
   source ~/.zlocal
 fi
+
+gu() {ip link show | grep -q "state UP" &&  git pull -q && git submodule -q foreach --recursive git pull -q}
+
+
 
