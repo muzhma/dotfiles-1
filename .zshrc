@@ -22,7 +22,7 @@ COMPLETION_WAITING_DOTS="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
- ZSH_CUSTOM=$ZSH/.omz-customizations
+ ZSH_CUSTOM=/home/jkl/.omz-customizations
 
 # Which plugins would you like to load? 
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
