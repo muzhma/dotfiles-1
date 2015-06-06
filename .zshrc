@@ -2,7 +2,8 @@
 export ZSH=/home/jkl/.oh-my-zsh
 export UPDATE_ZSH_DAYS=30
 
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="jkl"
 
 CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="false"
@@ -21,7 +22,7 @@ COMPLETION_WAITING_DOTS="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ ZSH_CUSTOM=$ZSH/.omz-customizations
 
 # Which plugins would you like to load? 
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
