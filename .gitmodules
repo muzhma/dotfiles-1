@@ -8,3 +8,6 @@
 [submodule ".omz-customizations"]
 	path = .omz-customizations
 	url = git://github.com/docjkl/omz-customizations.git
+[submodule "omz-customizations"]
+	path = omz-customizations
+	url = git@github.com:docjkl/omz-customizations.git
