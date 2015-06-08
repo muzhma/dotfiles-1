@@ -68,7 +68,7 @@ fi
 
 # some aliases
 alias statmk="make SHARED=0 CC='gcc -static'"
-alias xup="sh ~/.dotfiles/xup.sh" #FIXME
+alias xup="sh ~/.sbin/xup.sh" #FIXME
 
 # if we have local zsh changes add here
 if [ -x ~/.zlocal ]; then

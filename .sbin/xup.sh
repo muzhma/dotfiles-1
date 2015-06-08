@@ -1,14 +1,10 @@
 #!/bin/sh
 
-# xup.sh - do xrdb stuff
-# i will not write this in perl when sh will do nicely (as much as i want to)
-# we're assuming that the dotfiles were correctly installed or were done manually
-
 HOSTNAME=$(hostname)
 
 # TODO don't make $OVRD dependent on hostname, just symlink it to .xovrds in
 #      the installer
-OVRD="$HOME/.xovrds-$HOSTNAME"
+OVRD="$HOME/.xres-ovrds/xovrds-$HOSTNAME"
 XRES="$HOME/.Xresources"
 XRDB=$(which xrdb)
 
