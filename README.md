@@ -17,7 +17,7 @@ Initial Setup:
   git add -f .Xresources
   git commit -m 'initial commit'
 
-3.) Add and push to an online Git repo, for example:
+4.) Add and push to an online Git repo, for example:
   git remote add git@github.com:docjkl/dotfiles.git
   git push origin master
 ```
