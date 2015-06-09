@@ -17,7 +17,7 @@ Initial Setup:
   git add -f .Xresources
   git commit -m 'initial commit'
 
-3.) Add and push to an online Git repo, for example:
+4.) Add and push to an online Git repo, for example:
   git remote add git@github.com:docjkl/dotfiles.git
   git push origin master
 ```
@@ -31,7 +31,7 @@ New system setup:
 
 2.) Sync/overwrite local dotfiles from repo
   git fetch --all
-  git reset --hard origin/master
+  git reset --hard FETCH_HEAD
   git submodule update --init --recursive
 
 (you may have to edit your .gitmodules to use relative paths)
