@@ -13,6 +13,9 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 
+NeoBundle 'vim-perl/vim-perl'
+NeoBundle 'StanAngeloff/php.vim'
+
 NeoBundle 'scrooloose/nerdtree'	
 NeoBundle 'bling/vim-airline'
 NeoBundle 'altercation/vim-colors-solarized' 
