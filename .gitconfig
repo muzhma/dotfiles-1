@@ -3,3 +3,13 @@
 [user]
 	name = jessica k litwin
 	email = jessica@litw.in
+[color]
+	ui = true
+[format]
+	pretty = oneline
+[alias]
+	oops = reset HEAD --hard
+	crap = reset HEAD --soft
+	update = add -u
+[push]
+	default = simple
