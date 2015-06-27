@@ -1,0 +1,13 @@
+[user]
+	name = Jessica K. Litwin
+	email = jessica@litw.in
+[color]
+	ui = true
+[format]
+	pretty = oneline
+[alias]
+	fuck = reset HEAD --hard
+	shit = reset HEAD --soft
+	update = add -u
+[push]
+	default = simple
