@@ -2,12 +2,13 @@
 	name = Jessica K. Litwin
 	email = jessica@litw.in
 [color]
-	ui = true
+  ui = true
 [format]
 	pretty = oneline
 [alias]
-	fuck = reset HEAD --hard
-	shit = reset HEAD --soft
+  # TODO be more awesome
+	oops = reset HEAD --hard
+	crap = reset HEAD --soft
 	update = add -u
 [push]
 	default = simple
