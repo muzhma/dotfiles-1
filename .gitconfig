@@ -9,5 +9,3 @@
 	fuck = reset HEAD --hard
 	shit = reset HEAD --soft
 	update = add -u
-[push]
-	default = simple
