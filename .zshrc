@@ -34,7 +34,8 @@ plugins=(git)
 # User configuration
 export PATH="/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
-
+# additional pathing (this might break stuff)
+export PATH=$PATH:$HOME/bin
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
