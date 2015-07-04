@@ -1,10 +1,10 @@
 # submodules use relative paths pls
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = git@github.com/robbyrussell/oh-my-zsh.git
 [submodule "src"]
 	path = src
 	url = git@github.com:docjkl/src.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = git@github.com:robbyrussell/oh-my-zsh.git
 [submodule ".omz-customizations"]
 	path = .omz-customizations
 	url = git@github.com:docjkl/omz-customizations.git
