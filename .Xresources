@@ -14,7 +14,7 @@ URxvt*loginShell: true
 URxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
 URxvt*saveLines: 5000
 URxvt*termName: rxvt-unicode
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,clipboard
 URxvt.urlLauncher: firefox
 URxvt.clipboard.autocopy: true
 URxvt.matcher.button: 1
