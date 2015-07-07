@@ -76,7 +76,14 @@ if [ -x ~/.zlocal ]; then
   source ~/.zlocal
 fi
 
-gu() {ip link show | grep -q "state UP" &&  git pull -q && git submodule -q foreach --recursive git pull -q}
+gu() {ip link show | grep -q "state UP" &&  git pull -q && git submodule -q foreach --recursive git pull -q} #TODO: make this better
 
+# alias to keep one-line headers but do things with the rest 
+
+khead() {
+  IFS= read -r header
+  printf '%s\n' "$header"
+  "$@"
+}
 
 
