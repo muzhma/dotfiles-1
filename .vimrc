@@ -1,3 +1,7 @@
+"--- this is my vimrc, there are many like it but this one is mine -------
+
+"--- neobundle stuff -----------------------------------------------------
+
 if has('vim_starting')
   if &compatible
     set nocompatible
@@ -24,10 +28,13 @@ NeoBundle 'Conque-Shell'
 NeoBundle 'Valloric/vim-indent-guides'
 
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
 call neobundle#end()
+
+"--- shared code ---------------------------------------------------------
+
 filetype plugin indent on
 NeoBundleCheck	
-"-------------------------------------------------------------------------
 set t_Co=256
 set laststatus=2
 colorscheme solarized
@@ -36,8 +43,22 @@ let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 syntax on
 filetype plugin indent on
-highlight Normal ctermbg=8
+
+"highlight Normal ctermbg=0
+
+"let hostname = substitute(system('hostname'), '\n', '','')
+
+if hostname() == "koloth"
+ highlight Normal ctermbg=0
+endif 
 
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set backspace=indent,eol,start
 set nu
+
+"--- system specific -----------------------------------------------------
+
+if hostname() == "koloth"  " koloth - koding vm
+  " stupid patch to fix the vim-solarized dark background in koding
+  highlight Normal ctermbg=0
+endif
