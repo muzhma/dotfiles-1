@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/jkl/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 export UPDATE_ZSH_DAYS=30
 
 #ZSH_THEME="agnoster"
@@ -22,7 +22,7 @@ COMPLETION_WAITING_DOTS="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
- ZSH_CUSTOM=/home/jkl/.omz-customizations
+ ZSH_CUSTOM=$HOME/.omz-customizations
 
 # Which plugins would you like to load? 
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
