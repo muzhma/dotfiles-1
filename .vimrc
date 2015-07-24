@@ -36,6 +36,7 @@ let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 syntax on
 filetype plugin indent on
+highlight Normal ctermbg=0 
 
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set backspace=indent,eol,start
