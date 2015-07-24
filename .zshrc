@@ -1,9 +1,19 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+ZSH_CUSTOM=$HOME/.omz-customizations
+
 export UPDATE_ZSH_DAYS=30
 
-#ZSH_THEME="agnoster"
-ZSH_THEME="jkl"
+
+# it looks like the STY environment variable is only set inside 
+# koding's web IDE terminals, so use a prompt that doesn't need
+# unicode if you see it 
+
+if [ -n "${STY+x}" ]; then
+  ZSH_THEME="gnzh"
+else
+  ZSH_THEME="jkl"
+fi
 
 CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="false"
@@ -22,7 +32,6 @@ COMPLETION_WAITING_DOTS="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
- ZSH_CUSTOM=$HOME/.omz-customizations
 
 # Which plugins would you like to load? 
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
