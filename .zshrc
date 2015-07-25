@@ -5,11 +5,9 @@ ZSH_CUSTOM=$HOME/.omz-customizations
 export UPDATE_ZSH_DAYS=30
 
 
-# it looks like the STY environment variable is only set inside 
-# koding's web IDE terminals, so use a prompt that doesn't need
-# unicode if you see it 
-
-if [ -n "${STY+x}" ]; then
+# if we're using the koding web terminal don't use a theme that 
+# requires unicode support 
+if env | grep -q koding; then
   ZSH_THEME="gnzh"
 else
   ZSH_THEME="jkl"
