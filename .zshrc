@@ -82,9 +82,10 @@ alias statmk="make SHARED=0 CC='gcc -static'"
 alias xup="sh ~/.sbin/xup.sh" #FIXME
 
 # if we have local zsh changes add here
-if [ -x ~/.zlocal ]; then
-  source ~/.zlocal
-fi
+if [ -x ~/.zlocal ]; then source ~/.zlocal; fi
+
+# if rvm is installed make sure we use it
+if [ -x ~/.rvm/scripts/rvm ]; then source ~/.rvm/scripts/rvm; fi
 
 gu() {ip link show | grep -q "state UP" &&  git pull -q && git submodule -q foreach --recursive git pull -q} #TODO: make this better
 
