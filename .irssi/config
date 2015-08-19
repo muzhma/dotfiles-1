@@ -215,13 +215,6 @@ statusbar = {
         barend = { priority = "100"; alignment = "right"; };
       };
     };
-    awl_8 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_8 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
   };
 };
 settings = {
