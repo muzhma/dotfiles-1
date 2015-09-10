@@ -4,7 +4,6 @@ ZSH_CUSTOM=$HOME/.omz-customizations
 
 export UPDATE_ZSH_DAYS=30
 
-
 # if we're using the koding web terminal don't use a theme that 
 # requires unicode support 
 if env | grep -q koding; then
@@ -80,7 +79,8 @@ fi
 # some aliases
 alias statmk="make SHARED=0 CC='gcc -static'"
 alias xup="sh ~/.sbin/xup.sh" #FIXME
-
+#alias su='/bin/su root -c "/bin/bash --rcfile ${HOME}/.bash_profile"'
+#
 # if we have local zsh changes add here
 if [ -x ~/.zlocal ]; then source ~/.zlocal; fi
 
