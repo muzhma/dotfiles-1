@@ -166,26 +166,12 @@ statusbar = {
         barend = { priority = "100"; alignment = "right"; };
       };
     };
-    awl_1 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_1 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
-    awl_2 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_2 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
   };
 };
 settings = {
   theme = "default";
   hilight_color = "= %R";
-  core = { real_name = "dr. jkl"; user_name = "jkl"; nick = "jkl"; };
+  core = { real_name = "dr. jkl"; user_name = "jlitwin"; nick = "jkl"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
     theme = "jkl";
