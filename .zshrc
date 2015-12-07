@@ -12,6 +12,10 @@ else
   ZSH_THEME="jkl"
 fi
 
+# if we're on sdf, fix PATH
+if env | grep -q arpa; then
+  PATH=$PATH:/usr/pkg/bin:/usr/local/bin:/usr/bin:/bin:/usr/pkg/games:/usr/pkg/X11R7/bin
+fi
 CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="false"
 DISABLE_AUTO_TITLE="false"
