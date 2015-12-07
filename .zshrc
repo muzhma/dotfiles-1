@@ -12,10 +12,6 @@ else
   ZSH_THEME="jkl"
 fi
 
-# if we're on sdf, fix PATH
-if env | grep -q arpa; then
-  PATH=$PATH:/usr/pkg/bin:/usr/local/bin:/usr/bin:/bin:/usr/pkg/games:/usr/pkg/X11R7/bin
-fi
 CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="false"
 DISABLE_AUTO_TITLE="false"
@@ -44,10 +40,14 @@ plugins=(git)
 # User configuration
 export PATH="/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games"
 
+# unless we're on sdf then add sdf-stuff
+if env | grep -q arpa; then
+ export PATH='$PATH:/usr/pkg/bin:/usr/local/bin:/usr/bin:/bin:/usr/pkg/games:/usr/pkg/X11R7/bin'
+fi
+
 # export MANPATH="/usr/local/man:$MANPATH"
 # additional pathing (this might break stuff)
 export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,7 +89,10 @@ alias xup="sh ~/.sbin/xup.sh" #FIXME
 if [ -x ~/.zlocal ]; then source ~/.zlocal; fi
 
 # if rvm is installed make sure we use it
-if [ -x ~/.rvm/scripts/rvm ]; then source ~/.rvm/scripts/rvm; fi
+if [ -x ~/.rvm/scripts/rvm ]; then 
+  source ~/.rvm/scripts/rvm;
+  export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+ fi
 
 gu() {ip link show | grep -q "state UP" &&  git pull -q && git submodule -q foreach --recursive git pull -q} #TODO: make this better
 
