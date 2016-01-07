@@ -106,3 +106,4 @@ khead() {
 
 # some more aliases
 alias lish-tx="ssh -t lish-dallas.linode.com"
+alias as='azure network dns'
