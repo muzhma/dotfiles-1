@@ -166,6 +166,62 @@ statusbar = {
         barend = { priority = "100"; alignment = "right"; };
       };
     };
+    awl_1 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_1 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_2 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_2 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_3 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_3 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_4 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_4 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_5 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_5 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_6 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_6 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_7 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_7 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_8 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_8 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
   };
 };
 settings = {
@@ -178,7 +234,7 @@ settings = {
     beep_when_window_active = "yes";
     beep_when_away = "yes";
     beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
-    bell_beeps = "yes";
+    bell_beeps = "no";
   };
 };
 ignores = ( 
